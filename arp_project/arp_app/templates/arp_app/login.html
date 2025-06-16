@@ -1,48 +1,5 @@
 <!DOCTYPE html>
 {% load static %}
-{% comment %} <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Department Portal Login</title>
-  <link rel="stylesheet" href="{% static 'arp_app/css/style.css' %}">
-</head>
-<body>
-  <div class="container">
-
-    <form id="loginForm" method="POST" action="{% url 'login' %}">
-      {% csrf_token %} 
-
-
-      
-      <h2>Login</h2>
-
-      <label for="email">Email:</label>
-
-      <input type="email" name="email" id="email" placeholder="Enter your email" required>
-
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" placeholder="Enter your password" required>
-
-      <button type="submit">Login</button>
-
-      
-      {% if messages %}
-        <ul>
-          {% for message in messages %}
-            <li>{{ message }}</li>
-          {% endfor %}
-         </ul>
-      {% endif %}
-
-      <p id="errorMsg"></p>
-    </form>
-
-  </div>
-</body>
-</html>{% endcomment %}
-
-
 <html lang="en">
 <head>
   <meta charset="UTF-8" />

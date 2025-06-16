@@ -30,4 +30,3 @@ window.addEventListener('DOMContentLoaded', () => {
     imageContainer.classList.add('blur-background');
   }
 });
-// Close popup on form submission
