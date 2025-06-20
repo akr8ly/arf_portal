@@ -38,7 +38,6 @@ body {
 #loginPopup {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   position: absolute;
   top: 100%;
   right: 0;
@@ -51,6 +50,12 @@ body {
   height: 300px;
   z-index: 1000;
   box-sizing: border-box;
+}
+
+#loginForm {
+  display: block;
+  bottom: 23px;
+  position: relative;
 }
 
 #loginPopup input {
@@ -83,12 +88,12 @@ body {
   user-select: none;
 }
 
-#errorMsg {
+/* #errorMsg {
   color: red;
   font-size: 14px;
   margin: 5px 0 0;
   min-height: 18px;
-}
+} */
 
 #forgotPassword {
   margin-top: 2px;
@@ -136,7 +141,6 @@ body {
 
 .messages {
   color: red;
-  margin-top: 10px;
   list-style: none;
-  padding-left: 0;
+  padding-left: 10px;
 }

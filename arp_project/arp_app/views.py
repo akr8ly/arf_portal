@@ -17,13 +17,13 @@ def login_view(request):
                 login(request, user)
 
                 role = user.role.role.strip().lower()
+                division = user.division.division.strip() if user.division else None
 
                 if role == 'admin':
                     return redirect(reverse('admin:index'))
-                elif role == 'filling_user':
-                    return redirect('static_page')
-                else:
-                    return redirect('static_page')
+                elif role == 'filling_user' and division == 'Water, Air and Noise Monitoring Network':
+                    return redirect('chapter5')
+                
             else:
                 print("Incorrect password")
                 messages.error(request, 'Invalid password.')
@@ -34,8 +34,8 @@ def login_view(request):
     return render(request, 'arp_app/login.html')
 
 
-def static_page_view(request):
-    return render(request, 'arp_app/static_page.html')
+def chapter5_view(request):
+    return render(request, 'arp_app/chapter5.html')
 
 
 def home_view(request):
