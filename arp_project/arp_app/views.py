@@ -38,6 +38,8 @@ def login_view(request):
 
     return render(request, 'arp_app/login.html')
 
+def chapter3_view(request):
+    return render(request, 'arp_app/chapter3.html')
 
 def chapter5_view(request):
     return render(request, 'arp_app/chapter5.html')
@@ -45,6 +47,26 @@ def chapter5_view(request):
 def chapter4_view(request):
     return render(request, 'arp_app/chapter4.html')
 
+def chapter6_view(request):
+    return render(request, 'arp_app/chapter6.html')
+
+def chapter7_view(request):
+    return render(request, 'arp_app/chapter7.html')
+
+def chapter8_view(request):
+    return render(request, 'arp_app/chapter8.html')
+
+def chapter9_view(request):
+    return render(request, 'arp_app/chapter9.html')
+
+def chapter10_view(request):
+    return render(request, 'arp_app/chapter10.html')
+
+def chapter11_view(request):
+    return render(request, 'arp_app/chapter11.html')
+
+def chapter12_view(request):
+    return render(request, 'arp_app/chapter12.html')
 
 def home_view(request):
     return render(request, 'arp_app/home.html')
