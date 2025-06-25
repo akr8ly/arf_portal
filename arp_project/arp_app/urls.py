@@ -11,7 +11,7 @@ urlpatterns = [
     path('chapter8/', views.chapter8_view, name='chapter8'),
     path('chapter9/', views.chapter9_view, name='chapter9'),
     path('chapter10/', views.chapter10_view, name='chapter10'),
-    path('chapter11/', views.chapter11view, name='chapter11'),
+    path('chapter11/', views.chapter11_view, name='chapter11'),
     path('chapter12/', views.chapter12_view, name='chapter12'),
     path('login/', views.login_view, name='login'),
 

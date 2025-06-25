@@ -25,9 +25,27 @@ def login_view(request):
                 if role == 'admin':
                     return redirect(reverse('admin:index'))
                 elif role == 'filling_user' and division == 'Water, Air and Noise Monitoring Network':
+                    return redirect('chapter3')
+                elif role == 'filling_user' and division == 'Water, Air and Noise Monitoring Network':
                     return redirect('chapter5')
                 elif role == 'filling_user' and division == 'Committees Constituted by the Central Board  and their Activities':
                     return redirect('chapter4')
+                elif role == 'filling_user' and division == 'Present State of Environment; Environmental':
+                    return redirect('chapter6')
+                elif role == 'filling_user' and division == 'Environmental Researches':
+                    return redirect('chapter7')
+                elif role == 'filling_user' and division == 'Environmental Training':
+                    return redirect('chapter8')
+                elif role == 'filling_user' and division == 'Environmental Awareness and Public Participation':
+                    return redirect('chapter9')
+                elif role == 'filling_user' and division == 'Environmental Standards':
+                    return redirect('chapter10')
+                elif role == 'filling_user' and division == 'Prosecutions Launched, Convictions Secured & Directions issued for Closure of Polluting Industries':
+                    return redirect('chapter11')
+                elif role == 'filling_user' and division == 'Finance and Accounts':
+                    return redirect('chapter12')
+                
+            
                 
             else:
                 print("Incorrect password")
