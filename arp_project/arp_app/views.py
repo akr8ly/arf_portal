@@ -24,7 +24,7 @@ def login_view(request):
 
                 if role == 'admin':
                     return redirect(reverse('admin:index'))
-                elif role == 'filling_user' and division == 'Water, Air and Noise Monitoring Network':
+                elif role == 'filling_user' and division == 'Mediation and Coordination':
                     return redirect('chapter3')
                 elif role == 'filling_user' and division == 'Water, Air and Noise Monitoring Network':
                     return redirect('chapter5')
