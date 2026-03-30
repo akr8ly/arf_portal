@@ -39,7 +39,7 @@ def login_view(request):
                     return redirect('chapter8')
                 elif role == 'filling_user' and division == 'Environmental Awareness and Public Participation':
                     return redirect('chapter9')
-                elif role == 'filling_user' and division == '':
+                elif role == 'filling_user' and division == 'Environmental Standards':
                     return redirect('chapter10')
                 elif role == 'filling_user' and division == 'Prosecutions Launched, Convictions Secured & Directions issued for Closure of Polluting Industries':
                     return redirect('chapter11')
