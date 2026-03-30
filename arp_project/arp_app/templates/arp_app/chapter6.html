@@ -42,6 +42,8 @@
       <h1>Chapter 6</h1>
       <p class="main_heading">Present State Of Environment, Environmental Problems And Counter Measures</p>
 
+        <form method="POST" action="{% url 'chapter6' %}">
+        {% csrf_token %}
         <p class="sub_heading">6.1 Comprehensive Environmental Pollution Index</p>
         <div id="table" name="table" contenteditable="true" data-placeholder="Enter details for Comprehensive Environmental Pollution Index"></div>
         <input id="imageUploader" type="file" accept="image/*">

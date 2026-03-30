@@ -42,7 +42,8 @@
   <div class="format">
     <h1>Chapter V</h1>
     <p class="main_heading">WATER, AIR AND NOISE MONITORING NETWORK</p>
-    <form >
+    <form method="POST" action="{% url 'chapter5' %}">
+      {% csrf_token %}
       <p class="sub_heading">5.1 National Water Quality Monitoring Programme (NWMP)</p>
 
       <div class="textarea-group">
